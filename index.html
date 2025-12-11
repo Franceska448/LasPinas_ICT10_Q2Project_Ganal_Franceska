@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OB Montessori Center</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+    <!-- Google Font: Nunito -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            background-color: #293f76;
+            padding: 18px 40px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar .title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 600;
+            font-size: 15px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background-color: #cac7c7;
+            padding: 90px 30px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        /* ABOUT SECTION */
+        .about-section {
+            background-color: #f5eaea;
+            padding: 60px 70px;
+        }
+
+        .about-title {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 800;
+            color: #ad8a3c;
+        }
+
+        .underline {
+            width: 70px;
+            height: 4px;
+            background-color: #d4af37;
+            margin: 8px auto 30px;
+        }
+
+        .about-content {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .about-text {
+            width: 50%;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .about-text button {
+            margin-top: 20px;
+            background-color: #be4b7b;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 5px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .about-img {
+            width: 50%;
+        }
+
+        .about-img img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        /* PYTHON OUTPUT */
+        #py-output {
+            margin-top: 20px;
+            font-size: 16px;
+            color: white;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+        <div class="title">OB Montessori Center</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="index2.html">Grade Calculator</a>
+            <a href="index3.html">Clubs</a>
+        </div>
+    </div>
+
+    <!-- HERO / BANNER -->
+    <div class="hero">
+    <h1>Welcome to OB Montessori Center</h1>
+    <p>Excellence in Education Since 1966</p>
+
+    <!-- SCHOOL LOGO BELOW THE SUBTITLE -->
+    <img src="image-removebg-preview.png"
+         alt="School Logo"
+         class="hero-logo">
+
+    <div id="py-output"></div>
+</div>
+
+
+        <div id="py-output"></div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="about-section">
+        <div class="about-title">About Our School</div>
+        <div class="underline"></div>
+
+        <div class="about-content">
+            <div class="about-text">
+                OB Montessori Center is an established educational 
+                institution in the Philippines known for its structured Montessori-based curriculum and strong academic foundation. The school emphasizes
+                 “peaceful discipline,” independence, and a prepared learning environment that supports students’ natural curiosity and developmental stages. Its programs
+                  integrate traditional Montessori principles with modern educational practices to ensure that learners build competence, confidence, and a solid sense of responsibility.
+
+<br>
+<br>
+Beyond academics, OB Montessori Center is recognized for its focus on character formation and real-world readiness. Students engage 
+in practical life activities, leadership training, cultural appreciation, and community involvement, all designed to cultivate integrity 
+and global awareness. The school’s holistic approach aims to develop learners who are not only academically capable but also well-rounded individuals prepared 
+to lead and serve in an ever-changing world.
+                <br>
+                <button>Read More</button>
+            </div>
+
+            <div class="about-img">
+                <img src="OB school">
+            </div>
+        </div>
+    </div>
+
+    <!-- PYTHON SCRIPT -->
+    <py-script src="main.py"></py-script>
+
+</body>
+</html>

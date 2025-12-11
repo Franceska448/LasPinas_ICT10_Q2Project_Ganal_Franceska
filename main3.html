@@ -1,0 +1,31 @@
+from js import document
+
+# Sample clubs data
+def clubs = [
+    {"name": "Science Club", "desc": "Explore the wonders of science through experiments and projects.", "img": "https://images.unsplash.com/photo-1581091012184-dafda6a67c2d?auto=format&fit=crop&w=800&q=60"},
+    {"name": "Math Society", "desc": "Enhance your problem-solving skills and compete in math competitions.", "img": "https://images.unsplash.com/photo-1555949963-aa79dcee9815?auto=format&fit=crop&w=800&q=60"},
+    {"name": "ICT Club", "desc": "Develop coding, robotics, and tech projects with fellow students.", "img": "https://images.unsplash.com/photo-1581090700227-d21970e0be10?auto=format&fit=crop&w=800&q=60"},
+    {"name": "Drama Club", "desc": "Express your creativity through theater, acting, and stage performance.", "img": "https://images.unsplash.com/photo-1590080878899-2ee9f60d9c3e?auto=format&fit=crop&w=800&q=60"},
+    {"name": "PE Club", "desc": "Engage in sports, fitness, and wellness activities for a healthy lifestyle.", "img": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=800&q=60"},
+    {"name": "Filipino Language Club", "desc": "Celebrate Filipino culture and language through activities and projects.", "img": "https://images.unsplash.com/photo-1606107557191-0e29a4b5b6e4?auto=format&fit=crop&w=800&q=60"}
+]
+
+container = document.getElementById("clubs-container")
+
+for club in clubs:
+    card = document.createElement("div")
+    card.className = "club-card"
+
+    img = document.createElement("img")
+    img.src = club["img"]
+    card.appendChild(img)
+
+    h3 = document.createElement("h3")
+    h3.innerText = club["name"]
+    card.appendChild(h3)
+
+    p = document.createElement("p")
+    p.innerText = club["desc"]
+    card.appendChild(p)
+
+    container.appendChild(card)
